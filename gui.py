@@ -1,6 +1,11 @@
 import PySimpleGUI as sg
 import functions
 import time
+import os
+
+if not os.path.exists("operation.txt"):
+    with open("operation.txt", "w") as file:
+        pass
 
 sg.theme("DarkAmber")
 
